@@ -33,7 +33,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', SECRETKEY)
 
 DEBUG = os.environ.get('DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['good-enough.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['good-enough.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'djoser',
     'users', 
     'achievements',
+    'corsheaders',
 ]
 
 
@@ -58,6 +59,9 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.TokenAuthentication',
         'rest_framework.authentication.SessionAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
     ),
 }
 
@@ -69,14 +73,17 @@ DJOSER = {
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'backend.urls'
 

@@ -37,7 +37,7 @@ class MyUserManager(BaseUserManager):
 class MyUser(AbstractUser):
     username = None
     email = models.EmailField('email address', unique=True)
-    uuid = models.UUIDField(default=uuid.uuid4, editable=False)
+    uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
