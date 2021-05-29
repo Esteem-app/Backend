@@ -6,6 +6,8 @@ https://good-enough.herokuapp.com
 
 ## Table of contents
 * [General info](#general-info)
+* [Functionalities in place](#functionalities-in-place)
+* [Endpoints](#endpoints)
 * [Technologies](#technologies)
 * [Setup](#setup)
 
