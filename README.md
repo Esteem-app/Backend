@@ -1,7 +1,4 @@
 # Backend
-### TODO
-* Admin interface: 
-    * show readonly fields
 
 ## Website
 https://good-enough.herokuapp.com
