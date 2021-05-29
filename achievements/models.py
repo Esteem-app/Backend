@@ -11,7 +11,7 @@ class OwnedModel(models.Model):
 
 
 class Achievement(OwnedModel):
-    content = models.CharField(max_length=255)
+    content = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
