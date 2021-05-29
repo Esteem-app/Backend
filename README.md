@@ -13,9 +13,9 @@ https://good-enough.herokuapp.com
 
 ## General info
 This project was prepared for HackOn 2.0 between the 28th May 2021 and 30th May 2021 in the subject of mental health.
-Focusing on building self-confidence in the epidemics aftermath era, it uses the easy to use method to boost one's inner strength frequently used by therapist and coaches.
+Focusing on building self-confidence in the epidemics aftermath era, it uses the easy to use method to boost one's inner strength, which is frequently used by therapist and coaches.
 By adding their everyday achievements, user realizes how much they can appreciate themselves for on a daily basis.
-This is an MVP exposing the API for user registration and login functionalities, as well as adding the achievements with the date and reading the latest achievements from the database. This is to be integrated with the Frontend also prepared for the same hackathon, which is based on angular js and bootstrap, but can also be easily integrable with other solutions and expended with further fanctionalities in the future.
+This is an MVP exposing the REST API for user registration and login functionalities, as well as adding the achievements with the date and reading the latest achievements from the database. This is to be integrated with the Frontend also prepared for the same hackathon, which is based on angular js and bootstrap, but can also be easily integrable with other solutions and expanded with further functionalities in the future.
 
 ## Functionalities in place:
 * Registering a new user
@@ -71,7 +71,7 @@ For further details see requirements.txt
 ## Setup
 To run this project:
 * clone the repository locally
-* creaete virtual environement using Python 3.6.9
+* creaete virtual environment using Python 3.6.9
 * install `requirements.txt`
 * replace placeholders in `backend/example_settings.py` using your own creditentials.
 * rename `backend/example_settings.py` to `backend/local_settings.py` 
