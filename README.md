@@ -26,7 +26,29 @@ This is an MVP exposing the API for user registration and login functionalities,
 * Register new user
     * auth/users/ 
     * method: POST
-    * {'email'='string', 'password'='string'}
+    * data: {'email': '[string]', 'password': '[string]'}
+* Log In 
+    * auth/token/login/
+    * method: POST
+    * data: {'email': '[string]', 'password': '[string]'}
+    * response: {'auth_token': '[string]'}
+* Log Out
+    * auth/token/logout/
+    * method: POST
+    * headers: {Authorization: 'Token [string]'}
+* Getting user details
+    * auth/users/me/
+    * method: GET
+    * headers: {Authorization: 'Token [string]'}
+    * response: {'uuid": '[stirng]', 'email': '[string]'
+* Delete account
+    * /auth/users/me
+    * method: DELETE
+    * headers: {Authorization: 'Token [string]'}
+    * data: {'email': '[string]', 'password': '[string]'}
+   
+
+
 
 	
 ## Technologies
