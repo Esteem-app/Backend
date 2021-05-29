@@ -73,7 +73,8 @@ To run this project:
 * clone the repository locally
 * create virtual environment using Python 3.6.9
 * install `requirements.txt`
-* replace placeholders in `backend/example_settings.py` using your own creditentials.
+* replace placeholders in `backend/example_settings.py` using your own creditentials
+* (set-up a database called esteem in your local PostgreSQL instance unless you opted for a different database type and adopted the local_settings accordingly)
 * rename `backend/example_settings.py` to `backend/local_settings.py` 
 * run `python manage.py migrate`
 * run `python manage.py runserver`
