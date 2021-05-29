@@ -21,6 +21,13 @@ This is an MVP exposing the API for user registration and login functionalities,
 * Creating a new achievement
 * Displaying list of user's achievements
 * Delete user account
+
+## Endpoints
+* Register new user
+    * auth/users/ 
+    * method: POST
+    * {'email'='string', 'password'='string'}
+
 	
 ## Technologies
 Project is created with:
