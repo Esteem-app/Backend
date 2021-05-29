@@ -1,4 +1,4 @@
-SECRET_KEY = '<secret key>'
+SECRETKEY = '<secret key>'
 
 
 DATABASES = {
