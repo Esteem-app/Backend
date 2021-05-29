@@ -78,5 +78,7 @@ To run this project:
 * rename `backend/example_settings.py` to `backend/local_settings.py` 
 * run `python manage.py migrate`
 * run `python manage.py runserver`
+* to access some functionalities, e.g. API Url or Admin panel, you will need to create a superuser
+* we recommend working in the created virtual environment
 
 
