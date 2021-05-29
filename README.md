@@ -66,7 +66,7 @@ To run this project:
 * install `requirements.txt`
 * replace placeholders in `backend/example_settings.py` using your own creditentials.
 * rename `backend/example_settings.py` to `backend/local_settings.py` 
-* run 'python manage.py migrate'
-* run 'python manage.py runserver'
+* run `python manage.py migrate`
+* run `python manage.py runserver`
 
 
