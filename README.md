@@ -49,8 +49,12 @@ This is an MVP exposing the API for user registration and login functionalities,
     * method: DELETE
     * headers: {Authorization: 'Token [string]'}
     * data: {'email': '[string]', 'password': '[string]'}
-   
-
+* Adding achievement
+    * api/achievements/
+    * method: POST
+    * headers: {Authorization: 'Token [string]'}
+    * data: {'content': '[string]'}
+    
 
 
 	
