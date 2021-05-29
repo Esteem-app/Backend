@@ -53,7 +53,10 @@ This is an MVP exposing the API for user registration and login functionalities,
     * method: POST
     * headers: {Authorization: 'Token [string]'}
     * data: {'content': '[string]'}
-    
+ * List of previous achievements
+    * api/achievements/
+    * method: GET
+    * headers: {Authorization: 'Token [string]'}
 
 
 	
