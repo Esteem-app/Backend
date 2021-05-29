@@ -71,7 +71,7 @@ For further details see requirements.txt
 ## Setup
 To run this project:
 * clone the repository locally
-* creaete virtual environment using Python 3.6.9
+* create virtual environment using Python 3.6.9
 * install `requirements.txt`
 * replace placeholders in `backend/example_settings.py` using your own creditentials.
 * rename `backend/example_settings.py` to `backend/local_settings.py` 
